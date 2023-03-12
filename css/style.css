@@ -1,0 +1,141 @@
+/* Set Fonts and Resets */
+@import url("teko.css");
+
+body,
+html {
+  background: black;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  background-position: center;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+/* With Flexbox, Horizontally and vertically cneter */
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Actual Keyboard Keys */
+kbd {
+  display: block;
+  font-family: "Teko-Bold";
+  font-size: 3rem;
+  color: white;
+}
+
+/* Name of Sound */
+.sound {
+  font-family: "Teko-Regular";
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1rem;
+  color: white;
+}
+
+/* Use CSS Grid to display keys */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1.5fr repeat(2, 1fr);
+  grid-template-areas:
+    ". . . . . ."
+    "schwarzenegger1 schwarzenegger2 schwarzenegger3 stallone1 stallone2 stallone3"
+    "willis1 willis2 willis3 russell1 russell2 russell3";
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+/* Visual Keys / Squares */
+.key {
+  /* Typography */
+  margin: 1rem;
+  padding: 1rem 0.75rem;
+
+  /* Styling of keys */
+  width: 8rem;
+  height: 6rem;
+  text-align: center;
+  background-color: black;
+  outline: 5px solid red;
+  border-radius: 5px;
+  
+  /* Change mouse pointer */
+  cursor:pointer;
+  -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  
+  /* Call Transition */
+  transition: all 0.25s ease;
+}
+
+
+/* Transition Animation. Last frame of animation. */
+.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  background: darkred;
+}
+
+#schwarzenegger1 {
+  grid-area: schwarzenegger1;
+}
+
+#schwarzenegger2 {
+  grid-area: schwarzenegger2;
+}
+
+#schwarzenegger3 {
+  grid-area: schwarzenegger3;
+}
+
+#stallone1 {
+  grid-area: stallone1;
+}
+
+#stallone2 {
+  grid-area: stallone2;
+}
+
+#stallone3 {
+  grid-area: stallone3;
+}
+
+#willis1 {
+  grid-area: willis1;
+}
+
+#willis2 {
+  grid-area: willis2;
+}
+
+#willis3 {
+  grid-area: willis3;
+}
+
+#russell1 {
+  grid-area: russell1;
+}
+
+#russell2 {
+  grid-area: russell2;
+}
+
+#russell3 {
+  grid-area: russell3;
+}
