@@ -46,7 +46,7 @@ kbd {
 .keys {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1.5fr repeat(2, 1fr);
+  grid-template-rows: 2.25fr repeat(2, 1fr);
   grid-template-areas:
     ". . . . . ."
     "schwarzenegger1 schwarzenegger2 schwarzenegger3 stallone1 stallone2 stallone3"
@@ -61,8 +61,8 @@ kbd {
 /* Visual Keys / Squares */
 .key {
   /* Typography */
-  margin: 1rem;
-  padding: 1rem 0.75rem;
+  margin: 1.5rem;
+  padding: 1rem;
 
   /* Styling of keys */
   width: 8rem;
